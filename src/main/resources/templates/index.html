@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -50,7 +50,7 @@
                 <br>
                 <div class="ui button" id="submit">Get Prime</div>
                 <br>
-                <pre class="ui error message" id="message" style="overflow-x: auto">
+                <pre class="ui error message" id="message" style="overflow-x: auto" th:text=" ${ID} ">
                 </pre>
                 <pre class="ui info message" id="result" style="overflow-x: auto">
                 </pre>
